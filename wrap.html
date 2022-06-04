@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Introdução ao wrap</title>
+    <style>
+        .flex-container{
+            display: flex;
+            height: 150px;
+            border: 2px solid black;
+            max-width: 300px;
+        }
+        .item{
+            width: 100px;
+            line-height: 30px;
+            min-width: 100px;
+            font-size: 24px;
+            height: 50%;
+            text-align: center;
+        }
+        .nowrap{
+            flex-wrap: nowrap;
+        }
+        .blue{
+            background-color: blue;
+        }
+        .orange{
+            background-color: orange;
+        }
+        .red{
+            background-color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>no wrap</h1>
+    <div class="flex-container">
+        <div class="item orange">1</div>
+        <div class="item red">2</div>
+        <div class="item blue">3</div>
+    </div>
+</body>
+</html>
